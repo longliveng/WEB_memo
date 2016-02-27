@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="full-screen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="css/imgbox.css" />
+
+    <link rel="stylesheet" href="css/feedback_cyh.css?ttt=5" />
+    
+</head>
+
+<body>
+<!--内容开始-->
+<div class="content">
+    <form id="ui-feedback-post">
+         <div>
+             
+        <!--问题描述-->
+        <textarea name="content" rows="5" id="Content" placeholder="输入您的问题描述"></textarea>
+        <div id="counter">5-200字</div>
+         </div>
+        <!--添加图片-->
+        <div class="addimages clear">
+            <h1><span>添加图片</span>（最多可上传四张,单张图片大小限制2M）</h1>
+          
+            <div class="ui-images-box clear" style="">
+                
+<!--             <a class="new-images" href="http://192.168.1.59/data/upload/1/201602/1613331206366727.png" >
+                <div class="delete">
+                    <img class="delete-img" src="image/content_delete_pictures_gray40_nor.png">
+                    
+                </div>
+                <input type="hidden" name="image[]" value="">
+                <img src="http://192.168.1.59/data/upload/1/201602/1613331206366727.png">
+            </a> -->
+
+
+       
+                <div class="add-images">
+                    <input id="ui-fileupload-input" type="file" name="files" multiple="true" style="display: block;">
+                    <img id="ui-fileupload" src="image/content_add_pictures_gray_nor@3x.png">
+                </div>
+            </div>
+                                        
+        </div>
+        <!--联系方式-->
+        <div class="contactway">
+            <img class="tellicon" src="image/content_contact_way_gray_nor.png">
+            <span>联系方式：</span>
+            <input class="d-mobile" type="text" value="" name="mobile" placeholder="请输入您的联系方式">  
+        </div>
+        <!--提交按钮-->
+        <button name="" type="button" class="submitbutton">提交</button>
+    </form>
+</div>
+
+<!--内容结束-->
+</body>
+
+</html>
+        
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.imgbox.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+
+<script src="js/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="js/posted.js"></script>
+<script type="text/javascript" src="js/foucs.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $('.ui-images-box').on('touchstart','.new-images',function(e){
+            // console.log('ffffffffffff');return     false;
+            // e.preventDefault();
+            $(this).imgbox({
+                 slideshow: false,
+                 speedIn: 50,              // Set the zoom-in speed.
+                  speedOut: 50, 
+            });
+        });
+
+    });
+</script>

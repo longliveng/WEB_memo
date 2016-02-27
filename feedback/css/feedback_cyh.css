@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+/*通用定义*/
+html, body { width: 100%; height: 100%;line-height: 1.5em; padding: 0px;margin: 0px;background: #f0f0f0; color: #323232; font-size:100%;}
+p{padding:0;margin:0 auto; display:block; }
+div{padding:0;margin:0 auto;}
+ul{padding:0;list-style-type:none;margin:0 auto;}
+li{padding:0;margin:0 auto; list-style-type:none; display:block;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0;display:block; font-weight:normal;}
+img{ border:0; margin:0; padding:0;}
+a{text-decoration: none;}
+a img{ border:none;}
+label input{ margin:0; padding:0;}
+.clear{ clear:both;overflow: auto;}
+
+
+
+/*1意见反馈*/
+.content{ width: 100%;margin: 0 auto;margin-top: 2%;} 
+#Content{-webkit-appearance:none;-webkit-tap-highlight-color:rgba(255,255,255,0);width: 92%;height: 25%;padding: 3% 4%;background: #fff;font-size: 1em;border: none; line-height:1.4em;}
+#counter{width: 92%;  font-size:0.8em; text-align:right; padding:3% 4%; display:block; background:#FFF; color:#969696; margin-top:-0.4em;line-height: 1.5em;height: 1.5em;}
+    /*添加图片*/
+.addimages{width: 92%;padding: 0 4%;margin:0 auto; margin-top:1px;background: #fff;}
+.addimages h1{ width:100%; display:block;font-size: 0.8em; padding:3% 0; color:#969696; line-height:1em;}
+.addimages h1 span{ font-size: 1.25em;color:#323232;line-height:1.25em;}
+.addimages .images{width: 100%; }
+.add-images{ width:17%; height:auto; margin:0 3% 3% 0; float:left; }
+.new-images{  width:17%; height:auto; margin:0 3% 3% 0; float:left; }
+.new-images img{width: 100%;}
+.add-images a{}
+.add-images img{ width:100%;}
+    /*联系方式*/
+.contactway{width: 92%; padding: 0 4%;margin: 5% 0 0 0;background: #FFF; }
+.contactway .tellicon{width:1em;float:left;  padding:0.938em 0;}
+.contactway .tellicon img{ width:100%;}
+.contactway span{display:block;font-size: 1em;color:#646464; margin:0 0 0 1.45%; float:left;padding:0.844em 0;line-height: 1.2em;}
+input[type="text"]{-webkit-appearance:none;-webkit-tap-highlight-color:rgba(255,255,255,0);background: #FFF;width:62%;display:block;font-size: 1em;border:none; margin:0;padding:0.844em 0;line-height: 1.2em;}
+    /*提交按钮*/
+.submitbutton{-webkit-appearance:none;width:92%; border:none; border-radius:5px;background:#007aff; text-align:center; line-height:44px;color:#fff;font-size:1.2em; margin: 2.5em 4% 1.5em 4%; white-space: nowrap;vertical-align: top;cursor: pointer;}
+.submitbutton:focus{ background:#0067d8; color:#fff;}
+
+
+
+#ui-fileupload-input{
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 17%;
+    height: 17%;
+}
+.new-images .delete-img {
+   /* width: 5%;
+    height: auto;
+    position: absolute;
+    margin: 0 0 0 10.7%;*/
+
+    width: 60%;
+
+}
+.new-images .delete{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    margin: 0 0 0 11%;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:   #969696;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color:   #969696;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:   #969696;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:   #969696;
+}
+
+input,textarea{
+   color:  #323232;
+}
